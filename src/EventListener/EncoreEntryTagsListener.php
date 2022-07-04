@@ -30,8 +30,7 @@ class EncoreEntryTagsListener
         }
 
         $template->encoreEntryScriptTags = function (string $entryName, string $packageName = null, string $entrypointName = '_default', array $attributes = []): string {
-            // return $this->tagRenderer->renderWebpackScriptTags($entryName, $packageName, $entrypointName, $attributes);
-            return "Called with $entryName";
+            return $this->tagRenderer->renderWebpackScriptTags($entryName, $packageName, $entrypointName, $attributes);
         };
 
         $template->encoreEntryLinkTags = function (string $entryName, string $packageName = null, string $entrypointName = '_default', array $attributes = []): string {
