@@ -1,0 +1,15 @@
+services:
+    _defaults:
+        autoconfigure: true
+        public: false
+
+    Ameotoko\ContaoEncoreBridge\EventListener\EncoreEntryTagsListener:
+        arguments:
+            - '@webpack_encore.tag_renderer'
+
+    Ameotoko\ContaoEncoreBridge\EventListener\TagRendererListener:
+        arguments:
+            - '%kernel.project_dir%'
+            - '%contao.web_dir%'
+        tags:
+            - { name: kernel.event_listener, event: script }
