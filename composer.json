@@ -1,0 +1,17 @@
+{
+  "name": "ameotoko/contao-encore-bridge",
+  "authors": [
+    {
+      "name": "Andrey Vinichenko",
+      "email": "andrey.vinichenko@gmail.com"
+    }
+  ],
+  "type": "contao-bundle",
+  "require": {
+    "php": "^7.4",
+    "contao/core-bundle": "^4.13"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0"
+  }
+}
