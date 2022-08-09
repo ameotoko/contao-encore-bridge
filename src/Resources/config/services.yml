@@ -12,4 +12,4 @@ services:
             - '%kernel.project_dir%'
             - '%contao.web_dir%'
         tags:
-            - { name: kernel.event_listener, event: script }
+            - { name: kernel.event_listener, event: 'Symfony\WebpackEncoreBundle\Event\RenderAssetTagEvent' }
