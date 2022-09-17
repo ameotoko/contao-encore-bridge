@@ -10,7 +10,7 @@
   "type": "contao-bundle",
   "require": {
     "php": "^7.4 || ^8.0",
-    "contao/core-bundle": "^4.13",
+    "contao/core-bundle": "^4.13 || ^5.0",
     "symfony/webpack-encore-bundle": "^1.14"
   },
   "autoload": {
